@@ -1,5 +1,5 @@
 a = int(input("Enter your number "))
-sum = 0
+total = 0
 for i in range(1,a+1):
-    sum = i + sum
-print(sum)
+    total = i + total
+print(total)
