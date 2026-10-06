@@ -24,5 +24,6 @@ print(b1.get_balance())
 b1.deposit(44444)
 print(b1.get_balance())
 b1._balance = -99999
-print(b1.get_balance())
+print(b1.get_balance()) #-99999
+#as the data inside of the class can be changed outside this proves py does not provide security
 

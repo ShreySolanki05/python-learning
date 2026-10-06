@@ -1,4 +1,4 @@
-student1 = ("Alice",  "A")
+student1 = ("Alice", 20,  "A")
 student2 = ("John", 21 , "B")
 student3 = ("Kristy", 19, "A")
 students = [student1,student2,student3]
