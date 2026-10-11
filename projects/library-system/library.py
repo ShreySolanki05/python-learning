@@ -86,12 +86,8 @@ class Lib:
             print("either book name is incorrect or wrong member information ")
 
     def save_to_file(self, filename):
-       book_records = []
-       member_records = []
-       for book in self.books:
-           book_records.append(book.to_dict())
-       for member in self.members:
-           member_records.append(member.to_dict())
+       book_records = [book.to_dict() for book in self.books]
+       member_records = [member.to_dict() for member in self.members]
        data = {"books" : book_records , "members" : member_records}
        with open(filename,"w") as f:
            json.dump(data,f)
